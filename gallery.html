@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Gallery Page</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Hind:300,400,500,600,700|Open+Sans:300,400,600,700,800|Mr+De+Haviland" rel="stylesheet">
+  <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+
+  <script src="js/shadowbox.js"></script>
+  <script>
+    Shadowbox.init({
+    counterType: "skip",
+    slideshowDelay: 5
+    });
+  </script>
+
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="dropdown">
+        <button class="dropbtn" onclick="myFunction()"></button>
+        <div id="myDropdown" class="dropdown-content">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+      <a href="index.html"><img src="images/logo.png" alt="Site Logo" class="logo"></a>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="container">
+    <p class="page-header">
+      Gallery
+    </p>
+    <div class="row contact-frame gallery-top-padding">
+
+      <div class="photo-gallery">
+          <a href="photos/1.JPG" rel="shadowbox[gallery]"><span class="tape"></span><span class="comment">Description</span><img src="photos/1.JPG" alt=""></a>
+      </div>
+      <div class="photo-gallery">
+        <a href="photos/2.JPG" rel="shadowbox[gallery]"><span class="tape"></span><span class="comment">Description</span><img src="photos/2.JPG" alt=""></a>
+      </div>
+      <div class="photo-gallery">
+        <a href="photos/3.JPG" rel="shadowbox[gallery]"><span class="tape"></span><span class="comment">Description</span><img src="photos/3.JPG" alt=""></a>
+      </div>
+      <div class="photo-gallery">
+        <a href="photos/4.JPG" rel="shadowbox[gallery]"><span class="tape"></span><span class="comment">Description</span><img src="photos/4.JPG" alt=""></a>
+      </div>
+      <div class="photo-gallery">
+        <a href="photos/5.JPG" rel="shadowbox[gallery]"><span class="tape"></span><span class="comment">Description</span><img src="photos/5.JPG" alt=""></a>
+      </div>
+      <div class="photo-gallery">
+        <a href="photos/6.JPG" rel="shadowbox[gallery]"><span class="tape"></span><span class="comment">Description</span><img src="photos/6.JPG" alt=""></a>
+      </div>
+      <div class="photo-gallery">
+        <a href="photos/7.JPG" rel="shadowbox[gallery]"><span class="tape"></span><span class="comment">Description</span><img src="photos/7.JPG" alt=""></a>
+      </div>
+      <div class="photo-gallery">
+        <a href="photos/8.JPG" rel="shadowbox[gallery]"><span class="tape"></span><span class="comment">Description</span><img src="photos/8.JPG" alt=""></a>
+      </div>
+      <div class="photo-gallery">
+        <a href="photos/9.JPG" rel="shadowbox[gallery]"><span class="tape"></span><span class="comment">Description</span><img src="photos/9.JPG" alt=""></a>
+      </div>
+      <div class="photo-gallery">
+        <a href="photos/10.JPG" rel="shadowbox[gallery]"><span class="tape"></span><span class="comment">Description</span><img src="photos/10.JPG" alt=""></a>
+      </div>
+
+      <div class="side-shadow"></div>
+    </div> <!-- end of contact-frame -->
+  </div> <!-- end of container -->
+
+    <footer>
+      <div class="container">
+        <div class="social-links">
+          <a href="#" class="fa fa-twitter-square" aria-hidden="true"></a>
+          <a href="#" class="fa fa-facebook-official" aria-hidden="true"></a>
+          <a href="#" class="fa fa-instagram" aria-hidden="true"></a>
+          <a href="#" class="fa fa-pinterest-square" aria-hidden="true"></a>
+          <a href="#" class="fa fa-youtube-square" aria-hidden="true"></a>
+        </div>
+      </div>
+      <p>&copy;All rights reserved.</p>
+    </footer>
+  <script>
+    function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+    }
+
+    window.onclick = function(event) {
+      if (!event.target.matches('.dropbtn')) {
+
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
+          }
+        }
+      }
+    }
+  </script>
+</body>
+</html>

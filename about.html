@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>About Page</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Hind:300,400,500,600,700|Open+Sans:300,400,600,700,800|Mr+De+Haviland" rel="stylesheet">
+  <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+
+      <div class="dropdown">
+        <button class="dropbtn" onclick="myFunction()"></button>
+        <div id="myDropdown" class="dropdown-content">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+      <a href="index.html"><img src="images/logo.png" alt="Site Logo" class="logo"></a>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <div class="container">
+
+    <p class="page-header">
+      About
+    </p>
+    <div class="contact-frame">
+      <div class="row">
+        <div class="column-left">
+          <img src="images/profile-placeholder.jpg" alt="Author's Photo" class="about-image">
+          <div class="addings">
+            <p class="contact-header">
+              Contact
+            </p>
+            <p class="contact-text">
+              Andrey Dxxxxxxx
+            </p>
+            <p class="contact-text">
+              (000) 111-1111
+            </p>
+            <p class="contact-text">
+              <a href="#">info@myhobby.com</a>
+            </p>
+          </div>
+        </div>
+        <div class="column-right">
+          <p class="about-text">
+            I have become interested in photography in my childhood. My father has played a big role in this because he was an amateur photographer. He had a lot of different photo accessories starting with the camera and ending with printing equipment. I couldn't wait to start exploring his photo camera and the equipment. In age of 13 I got access to all of his 'photo treasures'.  My first photo camera was FED3.
+          </p>
+          <p class="about-text">
+            <img src="images/fed-three.jpg" alt="Photo Camera FED3">After practicing for a while, in age of 15-16, I seriously was considering photography as something I would like to be engaged with. I wasn't even scared by the old fashion way of printing photos when you have to deal with all the chemicals in order to capture images from the film on paper.
+          </p>
+          <p class="about-text">
+            <img src="images/zenit-et.jpg" alt="Photo Camera Zenit ET">
+            Soon my father's photo camera became mine. After using it for three years, I started to think about some upgrade (to buy a new camera, something more modern). In 18 I was able to get a new camera called Zenit ET. It was a great replacement for some years; suddenly entire world switched to digital, so...right, I needed a new camera.
+          </p>
+          <p class="about-text">
+            <img src="images/canon.jpg" alt="Photo Camera Canon 400D">
+            In the beginning, when the digital cameras just came out, they were pricey, so I couldn't afford buying one. What I did was - I waited until the excitement subsided on them and bought one at a reasonable price. It was February 2008. Since than I enjoy all the delights of digital photography. Whenever I go outdoors, I always take my digital camera with me.
+          </p>
+        </div> <!-- end of contact-content -->
+      </div> <!-- end of row -->
+      <div class="side-shadow"></div>
+    </div> <!-- end of contact-frame -->
+
+  </div> <!-- end of container -->
+    <footer>
+      <div class="container">
+        <div class="social-links">
+          <a href="#" class="fa fa-twitter-square" aria-hidden="true"></a>
+          <a href="#" class="fa fa-facebook-official" aria-hidden="true"></a>
+          <a href="#" class="fa fa-instagram" aria-hidden="true"></a>
+          <a href="#" class="fa fa-pinterest-square" aria-hidden="true"></a>
+          <a href="#" class="fa fa-youtube-square" aria-hidden="true"></a>
+        </div>
+      </div>
+      <p>&copy;All rights reserved.</p>
+    </footer>
+  <script>
+    function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+    }
+
+    window.onclick = function(event) {
+      if (!event.target.matches('.dropbtn')) {
+
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
+          }
+        }
+      }
+    }
+  </script>
+</body>
+</html>

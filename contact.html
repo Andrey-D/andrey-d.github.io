@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Contact Page</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Hind:300,400,500,600,700|Open+Sans:300,400,600,700,800|Mr+De+Haviland" rel="stylesheet">
+  <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+
+      <div class="dropdown">
+        <button class="dropbtn" onclick="myFunction()"></button>
+        <div id="myDropdown" class="dropdown-content">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+      <a href="index.html"><img src="images/logo.png" alt="Site Logo" class="logo"></a>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <div class="container">
+
+    <p class="page-header">
+      Contact
+    </p>
+    <div class="contact-frame">
+      <div class="row">
+        <div class="contact-media">
+          <img src="images/email-icon.svg" alt="Email logo" class="contact-img">
+        </div>
+        <div class="contact-content">
+          <p class="contact-header">
+            Contact me via email.
+          </p>
+          <p class="contact-text">
+            example@example.com
+          </p>
+          <a href="#" class="myButton">Jump</a>
+        </div> <!-- end of contact-content -->
+      </div> <!-- end of row -->
+      <div class="side-shadow"></div>
+    </div> <!-- end of contact-frame -->
+
+    <div class="contact-frame">
+      <div class="row">
+        <div class="contact-media">
+          <img src="images/twitter-icon.png" alt="Email logo" class="contact-img">
+        </div>
+        <div class="contact-content">
+          <p class="contact-header">
+            Find me on Twitter.
+          </p>
+          <p class="contact-text">
+            @myPhotoHobby
+          </p>
+          <a href="#" class="myButton">Jump</a>
+        </div> <!-- end of contact-content -->
+      </div> <!-- end of row -->
+      <div class="side-shadow"></div>
+    </div> <!-- end of contact-frame -->
+
+    <div class="contact-frame">
+      <div class="row">
+        <div class="contact-media">
+          <img src="images/facebook-icon.png" alt="Email logo" class="contact-img">
+        </div>
+        <div class="contact-content">
+          <p class="contact-header">
+            Find me on Facebook.
+          </p>
+          <p class="contact-text">
+            First Last names
+          </p>
+          <a href="#" class="myButton">Jump</a>
+        </div> <!-- end of contact-content -->
+      </div> <!-- end of row -->
+      <div class="side-shadow"></div>
+    </div> <!-- end of contact-frame -->
+
+    <div class="contact-frame">
+      <div class="row">
+        <div class="contact-media">
+          <img src="images/instagram-icon.png" alt="Email logo" class="contact-img">
+        </div>
+        <div class="contact-content">
+          <p class="contact-header">
+            Find me on Instagram.
+          </p>
+          <p class="contact-text">
+            #Something
+          </p>
+          <a href="#" class="myButton">Jump</a>
+        </div> <!-- end of contact-content -->
+      </div> <!-- end of row -->
+      <div class="side-shadow"></div>
+    </div> <!-- end of contact-frame -->
+
+    <div class="contact-frame">
+      <div class="row">
+        <div class="contact-media">
+          <img src="images/pinterest-icon.png" alt="Email logo" class="contact-img">
+        </div>
+        <div class="contact-content">
+          <p class="contact-header">
+            Find me on Pinterest.
+          </p>
+          <p class="contact-text">
+            #Something
+          </p>
+          <a href="#" class="myButton">Jump</a>
+        </div> <!-- end of contact-content -->
+      </div> <!-- end of row -->
+      <div class="side-shadow"></div>
+    </div> <!-- end of contact-frame -->
+
+    <div class="contact-frame">
+      <div class="row">
+        <div class="contact-media">
+          <img src="images/youtube-icon.png" alt="Email logo" class="contact-img">
+        </div>
+        <div class="contact-content">
+          <p class="contact-header">
+            Find me on YouTube.
+          </p>
+          <p class="contact-text">
+            YouTube Channel
+          </p>
+          <a href="#" class="myButton">Jump</a>
+        </div> <!-- end of contact-content -->
+      </div> <!-- end of row -->
+      <div class="side-shadow"></div>
+    </div> <!-- end of contact-frame -->
+
+  </div> <!-- end of container -->
+    <footer>
+      <div class="container">
+        <div class="social-links">
+          <a href="#" class="fa fa-twitter-square" aria-hidden="true"></a>
+          <a href="#" class="fa fa-facebook-official" aria-hidden="true"></a>
+          <a href="#" class="fa fa-instagram" aria-hidden="true"></a>
+          <a href="#" class="fa fa-pinterest-square" aria-hidden="true"></a>
+          <a href="#" class="fa fa-youtube-square" aria-hidden="true"></a>
+        </div>
+      </div>
+      <p>&copy;All rights reserved.</p>
+    </footer>
+  <script>
+    function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+    }
+
+    window.onclick = function(event) {
+      if (!event.target.matches('.dropbtn')) {
+
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
+          }
+        }
+      }
+    }
+  </script>
+</body>
+</html>
